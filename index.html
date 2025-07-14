@@ -1,201 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meshal Nayim | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0d1117;
-      --fg: #c9d1d9;
-      --accent: #58a6ff;
-      --card: #161b22;
-    }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg);
-      color: var(--fg);
-      line-height: 1.6;
-    }
-    nav {
-      background: var(--card);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: var(--fg);
-      margin-left: 1rem;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: var(--accent);
-    }
-    header {
-      text-align: center;
-      padding: 4rem 1rem 2rem;
-      background: var(--bg);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
-    }
-    header p {
-      color: #8b949e;
-      margin-top: 0.5rem;
-    }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      margin-bottom: 4rem;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.8s forwards;
-    }
-    section:nth-child(odd) { animation-delay: 0.1s; }
-    section:nth-child(even) { animation-delay: 0.2s; }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: none;
-      }
-    }
-    h2 {
-      color: var(--accent);
-      margin-bottom: 1rem;
-    }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .card {
-      background: var(--card);
-      padding: 1rem;
-      border-radius: 10px;
-      margin-bottom: 1.5rem;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Meshal Nayim | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0d1117;
+    --fg: #c9d1d9;
+    --accent: #58a6ff;
+    --card: #161b22;
+    --hover-shadow: rgba(88, 166, 255, 0.5);
+  }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+  }
+  nav {
+    background: var(--card);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  }
+  nav a {
+    color: var(--fg);
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: var(--accent);
+  }
+  header {
+    text-align: center;
+    padding: 4rem 1rem 2rem;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: var(--accent);
+  }
+  header p {
+    color: #8b949e;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  main {
+    max-width: 900px;
+    margin: 2rem auto 4rem;
+    padding: 0 1rem;
+  }
+  section {
+    margin-bottom: 4rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  section.visible {
+    opacity: 1;
+    transform: none;
+  }
+  h2 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.3rem;
+  }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .card {
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  }
+  /* About Me Flex */
+  .about-flex {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .about-flex img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .about-flex p {
+    flex: 1;
+    margin: 0;
+  }
+  /* Projects Tiles */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1.5rem;
+  }
+  .project-tile {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+  .project-tile:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 10px 20px var(--hover-shadow);
+  }
+  .project-tile strong {
+    display: block;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+  }
+  /* Institution Logos in Experience */
+  .experience-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  .experience-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #22272e;
+    padding: 6px;
+    flex-shrink: 0;
+    border: 1.5px solid var(--accent);
+  }
+  /* Contact links */
+  .contact a {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #8b949e;
+    border-top: 1px solid #22272e;
+  }
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
     .about-flex {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: center;
     }
     .about-flex img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 2px solid var(--accent);
-      object-fit: cover;
+      margin-bottom: 1rem;
     }
-    .about-flex p {
-      flex: 1;
-      margin: 0;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #8b949e;
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <nav>
-    <div><strong>Meshal Nayim</strong></div>
-    <div>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#research">Research</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
+<nav>
+  <div><strong>Meshal Nayim</strong></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Meshal Nayim</h1>
+  <p>Incoming MSDS @ UCSD | AI Automation Engineer | Deep Learning Researcher | Data Engineer</p>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card about-flex">
+      <img src="profile.jpg" alt="Meshal Nayim" />
+      <p>
+        I'm an incoming Master's student in Data Science at UC San Diego with a strong interest in applied AI, deep learning, and intelligent automation. My work spans from LLM-powered document understanding systems and HR automation tools to scalable data pipelines and dashboards for business analytics. I’ve also published award-winning research on transfer learning and image authenticity detection.
+      </p>
     </div>
-  </nav>
+  </section>
 
-  <header>
-    <h1>Meshal Nayim</h1>
-    <p>Incoming MSDS @ UCSD | AI Automation Engineer | Deep Learning Researcher | Data Engineer</p>
-  </header>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="card about-flex">
-        <img src="profile.jpg" alt="Profile Photo" />
-        <p>
-          I'm an incoming Master's student in Data Science at UC San Diego with a strong interest in applied AI, deep learning, and intelligent automation. My work spans from LLM-powered document understanding systems and HR automation tools to scalable data pipelines and dashboards for business analytics. I’ve also published award-winning research on transfer learning and image authenticity detection.
-        </p>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="card">
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-tile">
         <strong>Resume Screening Agent</strong>
-        <p>Automates candidate screening using OpenAI, n8n, and Google Sheets. Semantic scoring and structured output pipeline.</p>
+        Automates candidate screening using OpenAI, n8n, and Google Sheets. Semantic scoring and structured output pipeline.
       </div>
-      <div class="card">
+      <div class="project-tile">
         <strong>Bank Statement Parser</strong>
-        <p>Parses financial PDFs using AWS Textract, deployed via AWS Lambda.</p>
+        Parses financial PDFs using AWS Textract, deployed via AWS Lambda.
       </div>
-      <div class="card">
+      <div class="project-tile">
         <strong>Retail Analytics Dashboard</strong>
-        <p>Spark ETL pipeline on Databricks for sales & stock insights in electronics retail.</p>
+        Spark ETL pipeline on Databricks for sales & stock insights in electronics retail.
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="research">
-      <h2>Research</h2>
-      <div class="card">
-        <p><strong>"Transfer Learning-Based Discriminative CNNs for Latent Diffusion Image Authenticity Classification"</strong><br/>
-        Awarded Best Paper at [Conference Name, 2024]. Developed CNN-based model to classify synthetic vs. real images using CIFAKE dataset.</p>
-      </div>
-    </section>
+  <section id="research">
+    <h2>Research</h2>
+    <div class="card">
+      <p><strong>"Transfer Learning-Based Discriminative CNNs for Latent Diffusion Image Authenticity Classification"</strong><br/>
+      Awarded Best Paper at [Conference Name, 2024]. Developed CNN-based model to classify synthetic vs. real images using CIFAKE dataset.</p>
+    </div>
+  </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="card">
-        <strong>AI Automation Engineer @ Al Anees Group</strong>
-        <p>LLM-based automation tools, document parsing, AWS deployment.</p>
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card experience-item">
+      <img src="alanees_logo.png" alt="Al Anees Group Logo" />
+      <div>
+        <strong>AI Automation Engineer @ Al Anees Group</strong><br />
+        LLM-based automation tools, document parsing, AWS deployment.
       </div>
-      <div class="card">
-        <strong>Data Engineer @ Al Anees Electronics</strong>
-        <p>Databricks + Spark pipelines for real-time analytics.</p>
+    </div>
+    <div class="card experience-item">
+      <img src="alanees_electronics_logo.png" alt="Al Anees Electronics Logo" />
+      <div>
+        <strong>Data Engineer @ Al Anees Electronics</strong><br />
+        Databricks + Spark pipelines for real-time analytics.
       </div>
-      <div class="card">
-        <strong>Undergraduate Researcher @ VIT Chennai</strong>
-        <p>Transfer learning research, publication & paper award.</p>
+    </div>
+    <div class="card experience-item">
+      <img src="vit_logo.png" alt="VIT Chennai Logo" />
+      <div>
+        <strong>Undergraduate Researcher @ VIT Chennai</strong><br />
+        Transfer learning research, publication & paper award.
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="card">
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a><br>
-        GitHub: <a href="https://github.com/meshalnayim">meshalnayim</a><br>
-        LinkedIn: <a href="https://linkedin.com/in/meshalnayim">meshalnayim</a>
-        </p>
-      </div>
-    </section>
-  </main>
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/meshalnayim">meshalnayim</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/meshalnayim">meshalnayim</a></p>
+    </div>
+  </section>
+</main>
 
-  <footer>
-    &copy; 2025 Meshal Nayim
-  </footer>
+<footer>
+  &copy; 2025 Meshal Nayim
+</footer>
+
+<script>
+  // Fade in sections on scroll
+  function revealSections() {
+    const sections = document.querySelectorAll("section");
+    const windowBottom = window.innerHeight;
+    sections.forEach((section) => {
+      const top = section.getBoundingClientRect().top;
+      if (top < windowBottom - 100) {
+        section.classList.add("visible");
+      }
+    });
+  }
+  window.addEventListener("scroll", revealSections);
+  window.addEventListener("load", revealSections);
+</script>
 </body>
 </html>
