@@ -6,14 +6,10 @@ import Publications from "./components/Publications";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 
-import React from "react";
-
-
 export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">
-      {/* Sections with translucent overlay */}
-      <Navbar/ >
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
+      <Navbar />
       <Hero />
       <Education />
       <Experience />

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Publications() {
   const publishedPapers = [
@@ -17,79 +18,164 @@ export default function Publications() {
       title: "Bioinformatic Analysis of Bladder Cancer and Adrenocortical Carcinoma Reveals Distinct Genomic and Clinical Features",
       authors: "Aidor Mbungu Baptista, Tat'y Mwata-Velu, Meshal Nayim, Tania Raymundo Ojeda",
       year: "Under Review"
-    }
-  ];
-
-  const ongoing = [
+    },
     {
       title: "A Comparative Study of CNN and Transformer Architectures for Thyroid Cancer Diagnosis",
       authors: "Muhammed Tayyib, Meshal Nayim, et al.",
       year: "Under Review",
     },
+  ];
+
+  const ongoing = [
+
     {
       title: "Cross-Lingual Emotion Detection: An Explainable AI Approach",
       authors: "Muhammad Ahmad, Abubakar Siddique, Segun Latinwo, Umhy Habiba, Meshal Nayim, Ildar Batyrshin, Rita Orji, Grigori Sidorov",
-      year: "Under Review",
+      year: "On-going",
     },
   ];
 
   return (
-    <section  id="pub" className="relative py-20 px-8  backdrop-blur-md text-white">
+    <section id="pub" className="py-20 px-8 bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-6xl font-bold text-center mb-16">Publications</h2>
+        {/* Section Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent mb-4">
+            Publications
+          </h2>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            Research contributions in AI, computer vision, and healthcare analytics
+          </p>
+        </motion.div>
 
-        {/* Published Papers */}
-        <div className="flex flex-col items-center space-y-16">
+        <div className="space-y-16">
+          {/* Published Papers */}
           {publishedPapers.length > 0 && (
-            <div className="w-full max-w-3xl text-center">
-              <h3 className="text-3xl font-semibold text-white-300 mb-6">Published Papers</h3>
-              {publishedPapers.map((p, i) => (
-                <a
-                  key={i}
-                  href={p.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block bg-white/10 rounded-xl shadow-lg p-6 mb-6 text-left hover:scale-105 transform transition-transform duration-300"
-                >
-                  <h4 className="text-xl font-semibold text-white-300 mb-2">{p.title} ({p.year})</h4>
-                  <p className="text-white-300 mb-1">{p.authors}</p>
-                  <p className="text-white-400 text-sm">{p.conference} - {p.publisher}</p>
-                </a>
-              ))}
-            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-center"
+            >
+              <h3 className="text-3xl font-semibold text-teal-300 mb-8 flex items-center justify-center">
+                <span className="w-3 h-3 bg-teal-400 rounded-full mr-4"></span>
+                Published Papers
+                <span className="w-3 h-3 bg-teal-400 rounded-full ml-4"></span>
+              </h3>
+              <div className="space-y-6">
+                {publishedPapers.map((paper, index) => (
+                  <motion.a
+                    key={index}
+                    href={paper.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 hover:border-teal-400/30 hover:bg-white/15 transition-all duration-300 group"
+                    whileHover={{ scale: 1.02 }}
+                  >
+                    <div className="text-left">
+                      <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-teal-200 transition-colors duration-300">
+                          {paper.title}
+                        </h4>
+                        <span className="bg-teal-400/20 text-teal-300 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap">
+                          {paper.year}
+                        </span>
+                      </div>
+                      <p className="text-gray-300 mb-3 leading-relaxed">
+                        {paper.authors}
+                      </p>
+                      <div className="flex flex-col sm:flex-row sm:justify-between text-sm text-gray-400">
+                        <span className="mb-2 sm:mb-0">{paper.conference}</span>
+                        <span className="text-cyan-300 font-medium">{paper.publisher}</span>
+                      </div>
+                    </div>
+                  </motion.a>
+                ))}
+              </div>
+            </motion.div>
           )}
 
           {/* Under Review Papers */}
           {underReviewPapers.length > 0 && (
-            <div className="w-full max-w-3xl text-center">
-              <h3 className="text-3xl font-semibold text-white-300 mb-6">Under Review</h3>
-              {underReviewPapers.map((p, i) => (
-                <div
-                  key={i}
-                  className="bg-white/10 rounded-xl shadow-lg p-6 mb-6 text-left hover:scale-105 transform transition-transform duration-300"
-                >
-                  <h4 className="text-xl font-semibold text-white-300 mb-2">{p.title}</h4>
-                  <p className="text-white-300 mb-1">{p.authors}</p>
-                  <p className="text-white-400 text-sm">{p.year}</p>
-                </div>
-              ))}
-            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-center"
+            >
+              <h3 className="text-3xl font-semibold text-cyan-300 mb-8 flex items-center justify-center">
+                <span className="w-3 h-3 bg-cyan-400 rounded-full mr-4"></span>
+                Under Review
+                <span className="w-3 h-3 bg-cyan-400 rounded-full ml-4"></span>
+              </h3>
+              <div className="space-y-6">
+                {underReviewPapers.map((paper, index) => (
+                  <motion.div
+                    key={index}
+                    className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 hover:border-cyan-400/30 hover:bg-white/15 transition-all duration-300"
+                    whileHover={{ scale: 1.02 }}
+                  >
+                    <div className="text-left">
+                      <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <h4 className="text-xl font-semibold text-white mb-2">
+                          {paper.title}
+                        </h4>
+                        <span className="bg-cyan-400/20 text-cyan-300 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap">
+                          {paper.year}
+                        </span>
+                      </div>
+                      <p className="text-gray-300 leading-relaxed">
+                        {paper.authors}
+                      </p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
           )}
-          {/* On-going Research */}
-          {underReviewPapers.length > 0 && (
-            <div className="w-full max-w-3xl text-center">
-              <h3 className="text-3xl font-semibold text-white-300 mb-6">On-going Research</h3>
-              {ongoing.map((p, i) => (
-                <div
-                  key={i}
-                  className="bg-white/10 rounded-xl shadow-lg p-6 mb-6 text-left hover:scale-105 transform transition-transform duration-300"
-                >
-                  <h4 className="text-xl font-semibold text-white-300 mb-2">{p.title}</h4>
-                  <p className="text-white-300 mb-1">{p.authors}</p>
-                  <p className="text-white-400 text-sm">{p.year}</p>
-                </div>
-              ))}
-            </div>
+
+          {/* Ongoing Research */}
+          {ongoing.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="text-center"
+            >
+              <h3 className="text-3xl font-semibold text-teal-300 mb-8 flex items-center justify-center">
+                <span className="w-3 h-3 bg-teal-400 rounded-full mr-4"></span>
+                Ongoing Research
+                <span className="w-3 h-3 bg-teal-400 rounded-full ml-4"></span>
+              </h3>
+              <div className="space-y-6">
+                {ongoing.map((paper, index) => (
+                  <motion.div
+                    key={index}
+                    className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 hover:border-teal-400/30 hover:bg-white/15 transition-all duration-300"
+                    whileHover={{ scale: 1.02 }}
+                  >
+                    <div className="text-left">
+                      <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <h4 className="text-xl font-semibold text-white mb-2">
+                          {paper.title}
+                        </h4>
+                        <span className="bg-teal-400/20 text-teal-300 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap">
+                          {paper.year}
+                        </span>
+                      </div>
+                      <p className="text-gray-300 leading-relaxed">
+                        {paper.authors}
+                      </p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
           )}
         </div>
       </div>
