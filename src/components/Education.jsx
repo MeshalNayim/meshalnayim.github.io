@@ -12,10 +12,9 @@ const educationData = [
     degree: "Master of Science in Data Science",
     logo: ucsdLogo,
     year: "2025 - 2027",
-    gpa: "3.8/4.0",
     details: [
       {
-        title: "Relevant Coursework",
+        title: "Coursework",
         items: [
           "Data Science Programming",
           "Linear Algebra",
@@ -25,8 +24,8 @@ const educationData = [
       {
         title: "Research Focus",
         items: [
+          "LLM optimization",
           "Bioinformatics",
-          "Natural Language Processing",
           "Computer Vision"
         ]
       }
@@ -56,7 +55,6 @@ const educationData = [
         title: "Research Assistant",
         items: [
           "Collaborated with associate professor on AI research projects",
-          "Published paper on 'Optimized CNN Architectures for Medical Imaging'",
           "Awarded Best Paper Award for the paper"
         ]
       },
