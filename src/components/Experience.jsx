@@ -13,11 +13,7 @@ const experienceData = [
   period: "June 2025 – Aug 2025",
   logo: ooredooLogo,
   highlights: [
-    "Built Looker dashboards with LookML on BigQuery to model telecom KPIs such as service usage, events, and customer churn.",
-    "Designed reusable LookML views and explores for real-time performance monitoring and churn prediction.",
-    "Developed a Python pipeline on Google Cloud integrating Google Maps API for call geo-tracking.",
-    "Applied Isolation Forest anomaly detection to flag 2K+ suspicious call location patterns.",
-    "Improved fraud detection accuracy by 15% through early pattern identification and automated alerts."
+    "Data Modeling & Visualization – Optimized LookML models to define metrics, joins, and dimensions for telecoms KPIs, integrating churn, customer, and geolocation datasets from Biq Query according to client requirements"
   ],
 },
 {
