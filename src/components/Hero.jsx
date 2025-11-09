@@ -66,7 +66,7 @@ export default function Hero() {
 
     <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
       <h3 className="font-semibold text-teal-200 text-lg mb-2">
-        MS in Data Science — UC San Diego (Starting Sept 2025)
+        MS in Data Science — UC San Diego (Sept 2025)
       </h3>
       <p className="text-gray-200 text-sm">
         Enrolled in the MSDS program at UCSD, focusing on advanced AI systems, LLMs, and agentic reinforcement learning.
