@@ -47,81 +47,81 @@ export default function Hero() {
 
         <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
           <p>
-           I’m passionate about building intelligent systems that bridge data, automation, and real-world impact. My work spans machine learning, LLMs, and applied AI research, with experience developing end-to-end ML solutions in industry. I’m currently pursuing my MS in Data Science at UC San Diego, where I’m exploring how AI can advance fields like bioinformatics and data-driven decision systems.
+          I build intelligent systems that integrate data, automation, and real-world impact. My work spans machine learning, LLMs, agentic reinforcement learning, and applied AI research, supported by experience developing end-to-end ML solutions in industry. I am currently pursuing my MS in Data Science at UC San Diego, focusing on advancing large-scale AI systems and reinforcement learning. My research has been recognized with a Best Paper Award at the IEEE IACIS Conference 2024.
           </p>
         </div>
       </motion.div>
 
-      {/* Right — Current Work */}
-      <motion.div
-        className="w-full md:max-w-md bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg p-8 rounded-2xl shadow-xl border border-white/20 hover:border-teal-400/30 transition-all duration-300"
-        initial={{ x: 100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 0.2 }}
-      >
-        <h2 className="text-2xl md:text-3xl font-semibold text-teal-300 mb-6 flex items-center">
-          <span className="mr-3">🚀</span>
-          Current Research Projects
-        </h2>
-        
-        <div className="space-y-6">
-          <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
-            <h3 className="font-semibold text-teal-200 text-lg mb-2">
-              Bioinformatic Analysis of Bladder Cancer and Adrenocortical Carcinoma
-            </h3>
-            <p className="text-gray-200 text-sm">
-              Genomic analysis of 500 cancer patients revealing distinct mutation patterns and survival correlations between Bladder Cancer and Adrenocortical Carcinoma.
-            </p>
-          </div>
+      {/* Right — Recent Highlights */}
+<motion.div
+  className="w-full md:max-w-md bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg p-8 rounded-2xl shadow-xl border border-white/20 hover:border-teal-400/30 transition-all duration-300"
+  initial={{ x: 100, opacity: 0 }}
+  animate={{ x: 0, opacity: 1 }}
+  transition={{ duration: 1, delay: 0.2 }}
+>
+  <h2 className="text-2xl md:text-3xl font-semibold text-teal-300 mb-6 flex items-center">
+    <span className="mr-3">✨</span>
+    Recent Highlights
+  </h2>
 
-          <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
-            <h3 className="font-semibold text-teal-200 text-lg mb-2">
-              Comparative Analysis: CNN vs Transformers for Thyroid Cancer Diagnosis
-            </h3>
-            <p className="text-gray-200 text-sm">
-              Evaluating deep learning architectures for medical image analysis with focus on diagnostic accuracy and computational efficiency.
-            </p>
-          </div>
-          
-          <div className="bg-white/5 p-4 rounded-lg border-l-4 border-cyan-400 hover:bg-white/10 transition-all duration-300">
-            <h3 className="font-semibold text-teal-200 text-lg mb-2">
-              Cross-Lingual Emotion Detection using Explainable AI
-            </h3>
-            <p className="text-gray-200 text-sm">
-              Advanced multilingual emotion recognition using BiLSTM networks with custom attention mechanisms, delivering state-of-the-art performance across English and Urdu datasets.
-            </p>
-          </div>
-        </div>
+  <div className="space-y-6">
+    <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
+      <h3 className="font-semibold text-teal-200 text-lg mb-2">
+        Data Analyst Intern — Ooredoo (June 2025)
+      </h3>
+      <p className="text-gray-200 text-sm">
+        Joined Ooredoo as a Data Analyst Intern, contributing to analytics-driven insights and data automation initiatives.
+      </p>
+    </div>
 
-        {/* Skills Preview */}
-        <div className="mt-8 pt-6 border-t border-white/10">
-          <h3 className="font-semibold text-teal-300 mb-3">Core Expertise</h3>
-          <div className="flex flex-wrap gap-2">
-            {[
-  'Python',
-  'TensorFlow',
-  'PyTorch',
-  'SQL',
-  'Apache Spark',
-  'Data Pipelines',
-  'MLOps',
-  'NLP',
-  'Computer Vision',
-  'AWS',
-  'Docker',
-  'LLMs',
-  'Data Visualization'
-].map((skill) => (
-              <span 
-                key={skill}
-                className="px-3 py-1 bg-teal-400/10 text-teal-300 rounded-full text-sm border border-teal-400/20 hover:bg-teal-400/20 transition-colors duration-300"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
-      </motion.div>
+    <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
+      <h3 className="font-semibold text-teal-200 text-lg mb-2">
+        MS in Data Science — UC San Diego (Starting Sept 2025)
+      </h3>
+      <p className="text-gray-200 text-sm">
+        Enrolled in the MSDS program at UCSD, focusing on advanced AI systems, LLMs, and agentic reinforcement learning.
+      </p>
+    </div>
+
+    <div className="bg-white/5 p-4 rounded-lg border-l-4 border-cyan-400 hover:bg-white/10 transition-all duration-300">
+      <h3 className="font-semibold text-teal-200 text-lg mb-2">
+        Best Paper Award — IEEE IACIS 2024
+      </h3>
+      <p className="text-gray-200 text-sm">
+        Received the Best Paper Award for contributions to innovative AI-driven research.
+      </p>
+    </div>
+  </div>
+
+  {/* Skills Preview remains the same */}
+  <div className="mt-8 pt-6 border-t border-white/10">
+    <h3 className="font-semibold text-teal-300 mb-3">Core Expertise</h3>
+    <div className="flex flex-wrap gap-2">
+      {[
+        'Python',
+        'TensorFlow',
+        'PyTorch',
+        'SQL',
+        'Apache Spark',
+        'Data Pipelines',
+        'MLOps',
+        'NLP',
+        'Computer Vision',
+        'AWS',
+        'Docker',
+        'LLMs',
+        'Data Visualization'
+      ].map((skill) => (
+        <span 
+          key={skill}
+          className="px-3 py-1 bg-teal-400/10 text-teal-300 rounded-full text-sm border border-teal-400/20 hover:bg-teal-400/20 transition-colors duration-300"
+        >
+          {skill}
+        </span>
+      ))}
+    </div>
+  </div>
+</motion.div>
     </section>
   );
 }
