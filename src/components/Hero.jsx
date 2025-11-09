@@ -64,16 +64,6 @@ export default function Hero() {
     Recent Highlights
   </h2>
 
-  <div className="space-y-6">
-    <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
-      <h3 className="font-semibold text-teal-200 text-lg mb-2">
-        Data Analyst Intern — Ooredoo (June 2025)
-      </h3>
-      <p className="text-gray-200 text-sm">
-        Joined Ooredoo as a Data Analyst Intern, contributing to analytics-driven insights and data automation initiatives.
-      </p>
-    </div>
-
     <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
       <h3 className="font-semibold text-teal-200 text-lg mb-2">
         MS in Data Science — UC San Diego (Starting Sept 2025)
@@ -82,6 +72,18 @@ export default function Hero() {
         Enrolled in the MSDS program at UCSD, focusing on advanced AI systems, LLMs, and agentic reinforcement learning.
       </p>
     </div>
+
+  <div className="space-y-6">
+    <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
+      <h3 className="font-semibold text-teal-200 text-lg mb-2">
+        Data Analyst Intern — Ooredoo (June 2025)
+      </h3>
+      <p className="text-gray-200 text-sm">
+        Joined Ooredoo as a Data Analyst Intern.
+      </p>
+    </div>
+
+
 
     <div className="bg-white/5 p-4 rounded-lg border-l-4 border-cyan-400 hover:bg-white/10 transition-all duration-300">
       <h3 className="font-semibold text-teal-200 text-lg mb-2">
