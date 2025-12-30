@@ -54,6 +54,16 @@ I am actively seeking Data Science, ML Engineering, or Applied AI internships fo
     Recent Highlights
   </h2>
 
+  <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
+      <h3 className="font-semibold text-teal-200 text-lg mb-2">
+        Research Assistant — UC San Diego (Sept 2025)
+      </h3>
+      <p className="text-gray-200 text-sm">
+        Advised by Dr. Kun Zhou, improving AI Agents MCP tool usage, analysing Agent behaviour and developing benchmarking tools
+      </p>
+    </div>
+  
+
     <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
       <h3 className="font-semibold text-teal-200 text-lg mb-2">
         MS in Data Science — UC San Diego (Sept 2025)
@@ -62,6 +72,7 @@ I am actively seeking Data Science, ML Engineering, or Applied AI internships fo
         Enrolled in the MSDS program at UCSD, focusing on advanced AI systems, LLMs, and agentic reinforcement learning.
       </p>
     </div>
+  
 
   <div className="space-y-6">
     <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
@@ -90,20 +101,18 @@ I am actively seeking Data Science, ML Engineering, or Applied AI internships fo
     <h3 className="font-semibold text-teal-300 mb-3">Core Expertise</h3>
     <div className="flex flex-wrap gap-2">
       {[
-        'Python',
-        'TensorFlow',
-        'PyTorch',
-        'SQL',
-        'Apache Spark',
-        'Data Pipelines',
-        'MLOps',
-        'NLP',
-        'Computer Vision',
-        'AWS',
-        'Docker',
-        'LLMs',
-        'Data Visualization'
-      ].map((skill) => (
+  "Python",
+  "SQL",
+  "PyTorch",
+  "Machine Learning",
+  "LLM Systems (RAG, Agents, MCP)",
+  "Data Engineering (PySpark, Data Pipelines)",
+  "MLOps (MLflow, Model Deployment)",
+  "AWS",
+  "Docker",
+  "FastAPI",
+  "Computer Vision"
+].map((skill) => (
         <span 
           key={skill}
           className="px-3 py-1 bg-teal-400/10 text-teal-300 rounded-full text-sm border border-teal-400/20 hover:bg-teal-400/20 transition-colors duration-300"
