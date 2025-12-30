@@ -22,27 +22,11 @@ export default function Hero() {
           className="w-48 h-48 md:w-60 md:h-60 rounded-full shadow-2xl border-4 border-teal-400 object-cover mb-6 hover:scale-105 transform transition duration-500 hover:shadow-teal-400/30"
         />
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Hi, I'm{" "}
-          <TypeAnimation
-            sequence={[
-              "Meshal Nayim",
-              2000,
-              "a Data Scientist",
-              2000,
-              "an AI Enthusiast",
-              2000,
-              "a Problem Solver",
-              2000
-            ]}
-            speed={50}
-            repeat={Infinity}
-            wrapper="span"
-            className="text-teal-400 bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent"
-          />
+          Hi, I'm Meshal.
         </h1>
 
         <p className="text-gray-300 text-lg leading-relaxed mb-6">
-          Master's in Data Science at UC San Diego | Bridging AI Research with Real-World Impact
+          Master's in Data Science at UC San Diego
         </p>
 
         <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
