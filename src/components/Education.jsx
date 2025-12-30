@@ -12,6 +12,7 @@ const educationData = [
     degree: "Master of Science in Data Science",
     logo: ucsdLogo,
     year: "2025 - 2027",
+    gpa: "4.0/4.0",
     details: [
       {
         title: "Coursework",
@@ -19,14 +20,20 @@ const educationData = [
           "Data Science Programming",
           "Linear Algebra",
           "Probablity and Staistics",
+          "Data Mgt for Data Science",
+          "Machine Learning",
+          "Statistical Models",
+          "Data-Driven Text Mining",
+          "Big Data Analytics in Spark (Dask)"
+          
         ]
       },
       {
-        title: "Research Focus",
+        title: "Research Assistant",
         items: [
           "LLM optimization",
-          "Bioinformatics",
-          "Computer Vision"
+          "AI Agents",
+          "AI Agent behaviour"
         ]
       }
     ]
@@ -84,7 +91,7 @@ export default function Education() {
             Education
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            My academic journey through premier institutions, shaping my expertise in data science and AI
+            My academic journey 
           </p>
         </motion.div>
 
