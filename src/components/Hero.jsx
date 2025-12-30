@@ -47,7 +47,13 @@ export default function Hero() {
 
         <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
           <p>
-          I build intelligent systems that integrate data, automation, and real-world impact. My work spans machine learning, LLMs, agentic reinforcement learning, and applied AI research, supported by experience developing end-to-end ML solutions in industry. I am currently pursuing my MS in Data Science at UC San Diego, focusing on advancing large-scale AI systems and reinforcement learning. My research has been recognized with a Best Paper Award at the IEEE IACIS Conference 2024.
+          I hold a Bachelor’s degree in Computer Science, where I  gained over a year of combined internship and remote industry experience. During this period, I worked with organizations in Qatar, including Ooredoo, a leading telecommunications company, and Alanees, an e-commerce platform, contributing to production systems across AI automation, data warehousing, data engineering, and ML engineering.
+
+I am currently pursuing a Master’s in Data Science at UC San Diego to deepen my expertise in large-scale data systems and AI. Alongside my studies, I work as a Research Assistant at UCSD under Dr. Kun Zhou, collaborating with faculty associated with Prof. Zhiting Hu and Prof. Beiwei Huang. My research focuses on improving AI agent performance through Model Context Protocol (MCP) tool usage, benchmarking agent behavior, and evaluating system-level reliability and efficiency.
+
+My research work has been recognized with a Best Paper Award at the IEEE IACIS Conference 2024.
+
+I am actively seeking Data Science, ML Engineering, or Applied AI internships for Summer 2026, where I can contribute immediately to real-world systems while continuing to grow as an engineer and researcher.
           </p>
         </div>
       </motion.div>
