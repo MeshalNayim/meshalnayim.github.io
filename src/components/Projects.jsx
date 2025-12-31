@@ -26,10 +26,10 @@ const projects = [
   },
   {
     title: "Multimodal Desktop GUI Agent: ",
-    desc: "This project implements a token efficient multimodal desktop agent designed to operate on top of the OSWorld benchmark. The agent observes the GUI via screenshots and accessibility trees, summary of previous stated using a vision-language model, and performs actions.",
+    desc: "This project implements a token efficient multimodal desktop agent designed to operate on top of the OSWorld benchmark. The agent observes the GUI via screenshots, accessibility trees, and the summary of previous stated using a vision-language model, and performs actions.",
     images: [p1, p2],
     link: "https://meshalnayim.github.io/AI-Image-Detector/",
-    tags: ["AI Agents", "Mulitmodal", "RPA", "]
+    tags: ["AI Agents", "Mulitmodal", "RPA"]
   },
   {
     title: "Classifying AI-Generated and Real Images using Fine-Tuned CNN Models",
