@@ -28,6 +28,9 @@ export default function Hero() {
         <p className="text-gray-300 text-lg leading-relaxed mb-6">
           Master's in Data Science at UC San Diego
         </p>
+        <p className="text-blue-300 text-lg leading-relaxed mb-6">
+         Looiking for internships summer 2026
+        </p>
 
         <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
           <p>
