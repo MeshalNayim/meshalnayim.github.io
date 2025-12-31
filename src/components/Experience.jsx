@@ -18,21 +18,6 @@ const experienceData = [
   ],
 },
 {
-  company: "Al Anees (E-Commerce)",
-  role: "AI Automation Engineer",
-  location: "Doha, Qatar",
-  period: "Jan 2025 – June 2025",
-  logo: alaneesLogo,
-  highlights: [
-    "Built an automated pipeline that monitored incoming emails for resumes and processed PDFs with Gemini API for OCR.",
-    "Integrated GPT-4 for structured candidate screening and scoring with JSON-based output.",
-    "Auto-populated structured results into Google Sheets using the Google Sheets API.",
-    "Processed 900+ applications, reducing manual resume screening time by 80%.",
-    "Developed an end-to-end AWS pipeline using S3, Lambda, and Textract to process bank statement PDFs.",
-    "Generated SAP-ready reports in Google Sheets, reducing manual entry time from 1 day to under 15 minutes."
-  ],
-},
-{
   company: "Ooredoo (Telecom)",
   role: "Data Science Intern",
   location: "Doha, Qatar",
