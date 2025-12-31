@@ -29,7 +29,7 @@ export default function Hero() {
           Master's in Data Science at UC San Diego
         </p>
         <p className="text-blue-300 text-lg leading-relaxed mb-6">
-         Looiking for internships summer 2026
+         Actively seeking internships for summer 2026
         </p>
 
         <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
@@ -39,8 +39,6 @@ export default function Hero() {
 I am currently pursuing a Master’s in Data Science at UC San Diego to deepen my expertise in large-scale data systems and AI. Alongside my studies, I work as a Research Assistant at UCSD under Dr. Kun Zhou, collaborating with faculty associated with Prof. Zhiting Hu and Prof. Beiwei Huang. My research focuses on improving AI agent performance through Model Context Protocol (MCP) tool usage, benchmarking agent behavior, and evaluating system-level reliability and efficiency.
 
 My research work has been recognized with a Best Paper Award at the IEEE IACIS Conference 2024.
-
-I am actively seeking Data Science, ML Engineering, or Applied AI internships for Summer 2026, where I can contribute immediately to real-world systems while continuing to grow as an engineer and researcher.
           </p>
         </div>
       </motion.div>
