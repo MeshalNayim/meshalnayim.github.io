@@ -62,6 +62,7 @@ I am actively seeking Data Science, ML Engineering, or Applied AI internships fo
         Advised by Dr. Kun Zhou, improving AI Agents MCP tool usage, analysing Agent behaviour and developing benchmarking tools
       </p>
     </div>
+
   
 
     <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
@@ -74,6 +75,7 @@ I am actively seeking Data Science, ML Engineering, or Applied AI internships fo
     </div>
   
 
+  
   <div className="space-y-6">
     <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
       <h3 className="font-semibold text-teal-200 text-lg mb-2">
