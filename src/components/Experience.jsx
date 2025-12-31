@@ -4,8 +4,34 @@ import { motion } from "framer-motion";
 // Import company logos
 import ooredooLogo from "../assets/ooredoo.png";
 import alaneesLogo from "../assets/alanees.png";
+import ucsdlogo from "../assets/ucsd.png";
 
 const experienceData = [
+  {
+  company: "University of California - San Diego",
+  role: "Research Assistant",
+  location: "California, USA",
+  period: "Dec 2025 – Present",
+  logo: ucsdlogo,
+  highlights: [
+    "Advised by Dr.Kun Zhou, part of the Zhiting Hu and Biewie Huang Labs. Working on advancing AI Agent tool usage, Agent behaviour and Benchmarking"
+  ],
+},
+{
+  company: "Al Anees (E-Commerce)",
+  role: "AI Automation Engineer",
+  location: "Doha, Qatar",
+  period: "Jan 2025 – June 2025",
+  logo: alaneesLogo,
+  highlights: [
+    "Built an automated pipeline that monitored incoming emails for resumes and processed PDFs with Gemini API for OCR.",
+    "Integrated GPT-4 for structured candidate screening and scoring with JSON-based output.",
+    "Auto-populated structured results into Google Sheets using the Google Sheets API.",
+    "Processed 900+ applications, reducing manual resume screening time by 80%.",
+    "Developed an end-to-end AWS pipeline using S3, Lambda, and Textract to process bank statement PDFs.",
+    "Generated SAP-ready reports in Google Sheets, reducing manual entry time from 1 day to under 15 minutes."
+  ],
+},
 {
   company: "Ooredoo (Telecom)",
   role: "Data Science Intern",
@@ -43,7 +69,8 @@ const experienceData = [
     "Applied K-Means clustering to identify 5 distinct customer personas based on purchase behavior.",
     "Deployed the segmentation model as a batch scoring pipeline on AWS EC2 for regular updates.",
     "Served customer segments through Power BI dashboards to enable targeted marketing campaigns.",
-    "Increased customer engagement by 15% through personalized email marketing strategies.",
+    "Increased customer engagement by through personalized email marketing strategies.",
+    
     "Developed a production-grade LSTM model to forecast daily inventory demand across SKUs.",
     "Engineered features from 2 years of sales data using Apache Spark to capture yearly seasonality patterns.",
     "Tracked experiments and performance metrics with MLflow for model reproducibility.",
