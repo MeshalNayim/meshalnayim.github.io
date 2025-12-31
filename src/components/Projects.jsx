@@ -11,8 +11,26 @@ import pd1 from "../assets/pd1.png"
 import pd2 from "../assets/pd2.png"
 import pd3 from "../assets/pd3.png"
 import pic1 from "../assets/pic1.png"
+import app from "../assets/Screenshot 2025-12-30 200012.png" 
+import p1 from "../assets/step_1_20251124@193148378854.png"
+import p2 from "../assets/step_6_20251124@193235601354.png"
+
 
 const projects = [
+  {
+    title: "DocuRAG — Retrieval-Augmented Document Question Answering System",
+    desc: "a production-grade Retrieval-Augmented Generation system using FastAPI, Supabase (pgvector), OpenRouter LLMs, and Docker; supports multi-document ingestion, semantic search, and contextual QA.",
+    images: [app],
+    link: "https://meshalnayim.github.io/AI-Image-Detector/",
+    tags: ["RAG", "FastApi", "CloudRun", "GCP"]
+  },
+  {
+    title: "Multimodal Desktop GUI Agent: ",
+    desc: "This project implements a token efficient multimodal desktop agent designed to operate on top of the OSWorld benchmark. The agent observes the GUI via screenshots and accessibility trees, summary of previous stated using a vision-language model, and performs actions.",
+    images: [p1, p2],
+    link: "https://meshalnayim.github.io/AI-Image-Detector/",
+    tags: ["AI Agents", "Mulitmodal", "RPA", "]
+  },
   {
     title: "Classifying AI-Generated and Real Images using Fine-Tuned CNN Models",
     desc: "This research explores the challenge of distinguishing between authentic and AI-generated images using advanced convolutional neural network (CNN) architectures. Leveraging the CIFAKE dataset, we evaluated the performance of three pre-trained models: ResNet50, EfficientNetB0, and DenseNet121. DenseNet121 emerged as the most effective model, achieving an accuracy of 98.49% on the test dataset.",
