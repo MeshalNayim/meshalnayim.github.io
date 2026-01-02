@@ -21,7 +21,7 @@ const projects = [
     title: "DocuRAG — Retrieval-Augmented Document Question Answering System",
     desc: "a production-grade Retrieval-Augmented Generation system using FastAPI, Supabase (pgvector), OpenRouter LLMs, and Docker; supports multi-document ingestion, semantic search, and contextual QA.",
     images: [app],
-    link: "https://meshalnayim.github.io/AI-Image-Detector/",
+    link: "https://querypdf.lovable.app/",
     tags: ["RAG", "FastApi", "CloudRun", "GCP"]
   },
   {
