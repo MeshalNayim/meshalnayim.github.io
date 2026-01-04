@@ -1,7 +1,7 @@
 import React from "react";
-import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import profile from "../assets/profile.jpg";
+import resume from "../assets/Resume.pdf";
 
 export default function Hero() {
   return (
@@ -21,111 +21,128 @@ export default function Hero() {
           alt="Meshal Nayim"
           className="w-48 h-48 md:w-60 md:h-60 rounded-full shadow-2xl border-4 border-teal-400 object-cover mb-6 hover:scale-105 transform transition duration-500 hover:shadow-teal-400/30"
         />
+
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Hi, I'm Meshal.
         </h1>
 
-        <p className="text-gray-300 text-lg leading-relaxed mb-6">
+        <p className="text-gray-300 text-lg mb-2">
           Master's in Data Science at UC San Diego
         </p>
-        <p className="text-blue-300 text-lg leading-relaxed mb-6">
-         Actively seeking internships for summer 2026
+
+        <p className="text-blue-300 text-lg mb-4">
+          Actively seeking internships for summer 2026
         </p>
 
-        <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
+        {/* 🔗 Resume + Social Links */}
+        <motion.div
+          className="flex flex-wrap gap-3 justify-center md:justify-start mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.6 }}
+        >
+          {/* Resume */}
+          <a
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-teal-400/10 text-teal-300 border border-teal-400/30 hover:bg-teal-400/20 transition"
+          >
+            📄 Resume
+          </a>
+
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/YOUR_LINKEDIN"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-400/10 text-blue-300 border border-blue-400/30 hover:bg-blue-400/20 transition"
+          >
+            in LinkedIn
+          </a>
+
+          {/* GitHub */}
+          <a
+            href="https://github.com/YOUR_GITHUB"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-400/10 text-gray-200 border border-gray-400/30 hover:bg-gray-400/20 transition"
+          >
+            GitHub
+          </a>
+
+          {/* Email */}
+          <a
+            href="mailto:yourname@gmail.com"
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-400/10 text-cyan-300 border border-cyan-400/30 hover:bg-cyan-400/20 transition"
+          >
+            ✉ Email
+          </a>
+        </motion.div>
+
+        <div className="text-gray-300 text-lg leading-relaxed space-y-4">
           <p>
-          I hold a Bachelor’s degree in Computer Science, where I  gained over a year of combined internship and remote industry experience. During this period, I worked with organizations in Qatar, including Ooredoo, a leading telecommunications company, and Alanees, an e-commerce platform, contributing to production systems across AI automation, data warehousing, data engineering, and ML engineering.
+            I hold a Bachelor’s degree in Computer Science, with over a year of
+            combined internship and remote industry experience. I worked with
+            organizations in Qatar, including Ooredoo and Alanees, contributing
+            to AI automation, data engineering, and ML systems.
+          </p>
 
-I am currently pursuing a Master’s in Data Science at UC San Diego to deepen my expertise in large-scale data systems and AI. Alongside my studies, I work as a Research Assistant at UCSD under Dr. Kun Zhou, collaborating with faculty associated with Prof. Zhiting Hu and Prof. Beiwei Huang. My research focuses on improving AI agent performance through Model Context Protocol (MCP) tool usage, benchmarking agent behavior, and evaluating system-level reliability and efficiency.
+          <p>
+            I am currently pursuing a Master’s in Data Science at UC San Diego
+            and work as a Research Assistant under Dr. Kun Zhou, collaborating
+            with faculty associated with Prof. Zhiting Hu and Prof. Beiwei Huang.
+            My research focuses on AI agents, MCP tool usage, benchmarking, and
+            system-level reliability.
+          </p>
 
-My research work has been recognized with a Best Paper Award at the IEEE IACIS Conference 2024.
+          <p>
+            My research has been recognized with a Best Paper Award at the IEEE
+            IACIS Conference 2024.
           </p>
         </div>
       </motion.div>
 
       {/* Right — Recent Highlights */}
-<motion.div
-  className="w-full md:max-w-md bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg p-8 rounded-2xl shadow-xl border border-white/20 hover:border-teal-400/30 transition-all duration-300"
-  initial={{ x: 100, opacity: 0 }}
-  animate={{ x: 0, opacity: 1 }}
-  transition={{ duration: 1, delay: 0.2 }}
->
-  <h2 className="text-2xl md:text-3xl font-semibold text-teal-300 mb-6 flex items-center">
-    <span className="mr-3">✨</span>
-    Recent Highlights
-  </h2>
+      <motion.div
+        className="w-full md:max-w-md bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg p-8 rounded-2xl shadow-xl border border-white/20"
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <h2 className="text-2xl md:text-3xl font-semibold text-teal-300 mb-6">
+          ✨ Recent Highlights
+        </h2>
 
-  <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
-      <h3 className="font-semibold text-teal-200 text-lg mb-2">
-        Research Assistant — UC San Diego (Sept 2025)
-      </h3>
-      <p className="text-gray-200 text-sm">
-        Advised by Dr. Kun Zhou, improving AI Agents MCP tool usage, analysing Agent behaviour and developing benchmarking tools
-      </p>
-    </div>
+        <div className="space-y-4">
+          <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400">
+            <h3 className="font-semibold text-teal-200">
+              Research Assistant — UC San Diego (Sept 2025)
+            </h3>
+            <p className="text-gray-200 text-sm">
+              Improving AI agents MCP tool usage and benchmarking agent behavior.
+            </p>
+          </div>
 
-  
+          <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400">
+            <h3 className="font-semibold text-teal-200">
+              MS in Data Science — UC San Diego
+            </h3>
+            <p className="text-gray-200 text-sm">
+              Focus on advanced AI systems, LLMs, and agentic RL.
+            </p>
+          </div>
 
-    <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
-      <h3 className="font-semibold text-teal-200 text-lg mb-2">
-        MS in Data Science — UC San Diego (Sept 2025)
-      </h3>
-      <p className="text-gray-200 text-sm">
-        Enrolled in the MSDS program at UCSD, focusing on advanced AI systems, LLMs, and agentic reinforcement learning.
-      </p>
-    </div>
-  
-
-  
-  <div className="space-y-6">
-    <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400 hover:bg-white/10 transition-all duration-300">
-      <h3 className="font-semibold text-teal-200 text-lg mb-2">
-        Data Analyst Intern — Ooredoo (June 2025)
-      </h3>
-      <p className="text-gray-200 text-sm">
-        Joined Ooredoo as a Data Analyst Intern.
-      </p>
-    </div>
-
-
-
-    <div className="bg-white/5 p-4 rounded-lg border-l-4 border-cyan-400 hover:bg-white/10 transition-all duration-300">
-      <h3 className="font-semibold text-teal-200 text-lg mb-2">
-        Best Paper Award — IEEE IACIS 2024
-      </h3>
-      <p className="text-gray-200 text-sm">
-        Received the Best Paper Award for contributions to innovative AI-driven research.
-      </p>
-    </div>
-  </div>
-
-  {/* Skills Preview remains the same */}
-  <div className="mt-8 pt-6 border-t border-white/10">
-    <h3 className="font-semibold text-teal-300 mb-3">Core Expertise</h3>
-    <div className="flex flex-wrap gap-2">
-      {[
-  "Python",
-  "SQL",
-  "PyTorch",
-  "Machine Learning",
-  "LLM Systems (RAG, Agents, MCP)",
-  "Data Engineering (PySpark, Data Pipelines)",
-  "MLOps (MLflow, Model Deployment)",
-  "AWS",
-  "Docker",
-  "FastAPI",
-  "Computer Vision"
-].map((skill) => (
-        <span 
-          key={skill}
-          className="px-3 py-1 bg-teal-400/10 text-teal-300 rounded-full text-sm border border-teal-400/20 hover:bg-teal-400/20 transition-colors duration-300"
-        >
-          {skill}
-        </span>
-      ))}
-    </div>
-  </div>
-</motion.div>
+          <div className="bg-white/5 p-4 rounded-lg border-l-4 border-cyan-400">
+            <h3 className="font-semibold text-teal-200">
+              Best Paper Award — IEEE IACIS 2024
+            </h3>
+            <p className="text-gray-200 text-sm">
+              Awarded for innovative AI-driven research.
+            </p>
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 }
