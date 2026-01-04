@@ -58,7 +58,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-400/10 text-blue-300 border border-blue-400/30 hover:bg-blue-400/20 transition"
           >
-            in LinkedIn
+           LinkedIn
           </a>
 
           {/* GitHub */}
