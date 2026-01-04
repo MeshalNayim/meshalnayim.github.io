@@ -129,7 +129,7 @@ export default function Hero() {
               MS in Data Science — UC San Diego
             </h3>
             <p className="text-gray-200 text-sm">
-              Focus on advanced AI systems, LLMs, and agentic RL.
+              
             </p>
           </div>
 
