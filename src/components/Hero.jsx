@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import profile from "../assets/profile.jpg";
-import resume from "../assets/Resume.pdf";
+import resume from "../assets/Data_Scientist__Copy_.pdf";
 
 export default function Hero() {
   return (
@@ -53,7 +53,7 @@ export default function Hero() {
 
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/YOUR_LINKEDIN"
+            href="https://www.linkedin.com/in/meshal-nayim-b13750231/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-400/10 text-blue-300 border border-blue-400/30 hover:bg-blue-400/20 transition"
@@ -63,7 +63,7 @@ export default function Hero() {
 
           {/* GitHub */}
           <a
-            href="https://github.com/YOUR_GITHUB"
+            href="https://github.com/MeshalNayim"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-400/10 text-gray-200 border border-gray-400/30 hover:bg-gray-400/20 transition"
@@ -73,7 +73,7 @@ export default function Hero() {
 
           {/* Email */}
           <a
-            href="mailto:yourname@gmail.com"
+            href="mailto:mnayim@ucsd.edu"
             className="flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-400/10 text-cyan-300 border border-cyan-400/30 hover:bg-cyan-400/20 transition"
           >
             ✉ Email
@@ -90,8 +90,8 @@ export default function Hero() {
 
           <p>
             I am currently pursuing a Master’s in Data Science at UC San Diego
-            and work as a Research Assistant under Dr. Kun Zhou, collaborating
-            with faculty associated with Prof. Zhiting Hu and Prof. Beiwei Huang.
+            and work as a Research Assistant under Dr. Kun Zhou, who is 
+            associated with Prof. Zhiting Hu and Prof. Beiwei Huang.
             My research focuses on AI agents, MCP tool usage, benchmarking, and
             system-level reliability.
           </p>
