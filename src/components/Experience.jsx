@@ -46,22 +46,22 @@ const experienceData = [
   company: "Al Anees (E-Commerce)",
   role: "Data Scientist",
   location: "Doha, Qatar",
-  period: "Jan 2024 – Jan 2025",
+  period: "Mar 2024 – Jan 2025",
   logo: alaneesLogo,
   highlights: [
-    "Built a production customer segmentation system for data-driven marketing initiatives.",
-    "Processed 2+ years of transactional data using PySpark to compute RFM (Recency, Frequency, Monetary) features for 50,000+ customers.",
-    "Applied K-Means clustering to identify 5 distinct customer personas based on purchase behavior.",
-    "Deployed the segmentation model as a batch scoring pipeline on AWS EC2 for regular updates.",
-    "Served customer segments through Power BI dashboards to enable targeted marketing campaigns.",
-    "Increased customer engagement by through personalized email marketing strategies.",
-    
-    "Developed a production-grade LSTM model to forecast daily inventory demand across SKUs.",
-    "Engineered features from 2 years of sales data using Apache Spark to capture yearly seasonality patterns.",
-    "Tracked experiments and performance metrics with MLflow for model reproducibility.",
-    "Containerized the LSTM model with Docker and deployed it on AWS EC2 for monthly inference.",
-    "Integrated demand forecasts into supply chain dashboards for procurement and stock planning.",
-    "Achieved a MAPE of 14–16% and reduced stockouts by 12%, improving inventory capital allocation."
+   "Demand Forecasting – Developed PyTorch LSTM models with PySpark feature engineering to predict SKU-level demand(18% MAPE). Models were tracked in MLflow and deployed via Docker to support inventory planning.",
+   "Customer Segmentation – Built PySpark pipeline to compute RFM features for 50K+ customers and implemented K-Means clustering, creating 5 customer personas used by marketing for targeted campaigns.",
+   "Model Deployment – Containerized models using Docker and worked with DevOps to deploy as REST APIs on AWS EC2 Implemented MLflow for experiment tracking and contributed to CI/CD automation"
+  ]},
+  {
+  company: "Al Anees (E-Commerce)",
+  role: "Data Engineering Intern",
+  location: "Doha, Qatar",
+  period: "Jan 2024 – Mar 2024",
+  logo: alaneesLogo,
+  highlights: [
+   "ETL Pipeline Development – Built PySpark transformation jobs to clean and migrate 3M+ records from SAP to PostgreSQL, scheduled via Apache Airflow for daily automation.",
+   "Business Intelligence – Prototyped sales analytics dashboards in Streamlit to validate requirements, enabling the BI team to build production Power BI reports that reduced stockouts by 20%."
   ]},
   {
     company: "Ooredoo (Telecom)",
