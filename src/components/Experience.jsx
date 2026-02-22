@@ -7,24 +7,36 @@ import alaneesLogo from "../assets/alanees.png";
 import ucsdlogo from "../assets/ucsd.png";
 
 const experienceData = [
+{
+  company: "University of California - San Diego",
+  role: "Graduate Student Researcher",
+  location: "California, USA",
+  period: "Jan 2026 – Present",
+  logo: ucsdlogo,
+  highlights: [
+    "• Internet-Scale Traceroute Analysis: Collected and processed Ark traceroute data using Dask for distributed computation, computed RTT and path statistics, and produced large-scale network visualizations"
+  ],
+},
   {
   company: "University of California - San Diego",
   role: "Research Assistant",
   location: "California, USA",
-  period: "Dec 2025 – Present",
+  period: "Oct 2025 – Jan 2026",
   logo: ucsdlogo,
   highlights: [
-    "Advised by Dr.Kun Zhou, part of the Zhiting Hu and Biewie Huang Labs. Working on advancing AI Agent tool usage, Agent behaviour and Benchmarking"
+    "• Agent Benchmarking: Assisted in building MCP-based benchmarking pipelines to stress-test long-horizon, multi-tool agents across 5.5K+ APIs, revealing key planning–execution gaps.",
+    "• Robustness Evaluation: Developed failure-injection and trajectory analysis framework enabling data-efficient fine-tuning (1.2K samples outperforming 119K baselines) and improving agent reliability."
   ],
 },
 {
   company: "Ooredoo (Telecom)",
-  role: "Data Science Intern",
+  role: "Data Warehouse Intern",
   location: "Doha, Qatar",
   period: "June 2025 – Aug 2025",
   logo: ooredooLogo,
   highlights: [
-    "Data Modeling & Visualization – Optimized LookML models to define metrics, joins, and dimensions for telecoms KPIs, integrating churn, customer, and geolocation datasets from Biq Query according to client requirements"
+    "Data Modeling & Visualization – Optimized LookML models to define metrics, joins, and dimensions for telecoms KPIs, integrating churn, customer, and geolocation datasets from Biq Query according to client requirements",
+    "Data Warehouse Analytics – Developed advanced SQL queries on Teradata and designed KPI dashboards in Qlik Sense according to client requirements."
   ],
 },
 {
@@ -44,36 +56,25 @@ const experienceData = [
 },
 {
   company: "Al Anees (E-Commerce)",
-  role: "Data Scientist",
-  location: "Doha, Qatar",
-  period: "Mar 2024 – Jan 2025",
-  logo: alaneesLogo,
-  highlights: [
-   "Demand Forecasting – Developed PyTorch LSTM models with PySpark feature engineering to predict SKU-level demand(18% MAPE). Models were tracked in MLflow and deployed via Docker to support inventory planning.",
-   "Customer Segmentation – Built PySpark pipeline to compute RFM features for 50K+ customers and implemented K-Means clustering, creating 5 customer personas used by marketing for targeted campaigns.",
-   "Model Deployment – Containerized models using Docker and worked with DevOps to deploy as REST APIs on AWS EC2 Implemented MLflow for experiment tracking and contributed to CI/CD automation"
-  ]},
-  {
-  company: "Al Anees (E-Commerce)",
   role: "Data Engineering Intern",
   location: "Doha, Qatar",
-  period: "Jan 2024 – Mar 2024",
+  period: "Jan 2024 – Jan 2025",
   logo: alaneesLogo,
   highlights: [
    "ETL Pipeline Development – Built PySpark transformation jobs to clean and migrate 3M+ records from SAP to PostgreSQL, scheduled via Apache Airflow for daily automation.",
-   "Business Intelligence – Prototyped sales analytics dashboards in Streamlit to validate requirements, enabling the BI team to build production Power BI reports that reduced stockouts by 20%."
-  ]},
-  {
-    company: "Ooredoo (Telecom)",
-    role: "Data Science Intern",
-    location: "Doha, Qatar",
-    period: "Aug 2023 – Oct 2023",
-    logo: ooredooLogo,
-    highlights: [
-      "Performed Advanced SQL operations on Teradata and delivered various customized plots and visualizations using Qlik Sense",
-      "Designed enterprise-level ER diagrams with 200 tables using erwin Data Modeler; performed data mapping and ensured schema consistency across 5+ systems, enabling accurate analytics"
-    ],
-  },
+   "Requirements & Data Modeling – Worked with cross-functional teams to define KPI logic and reporting needs, designing PostgreSQL schemas and developed transformation pipelines to support analytics use cases."
+]},
+{
+  company: "Ooredoo (Telecom)",
+  role: "Data Science Intern",
+  location: "Doha, Qatar",
+  period: "Aug 2023 – Oct 2023",
+  logo: ooredooLogo,
+  highlights: [
+    "Performed Advanced SQL operations on Teradata and delivered various customized plots and visualizations using Qlik Sense",
+    "Designed enterprise-level ER diagrams with 200 tables using erwin Data Modeler; performed data mapping and ensured schema consistency across 5+ systems, enabling accurate analytics"
+  ],
+},
 ];
 
 export default function Experience() {
