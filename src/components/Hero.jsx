@@ -22,9 +22,7 @@ export default function Hero() {
           className="w-48 h-48 md:w-60 md:h-60 rounded-full shadow-2xl border-4 border-teal-400 object-cover mb-6 hover:scale-105 transform transition duration-500 hover:shadow-teal-400/30"
         />
 
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Hi, I'm Meshal.
-        </h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Meshal.</h1>
 
         <p className="text-gray-300 text-lg mb-2">
           Master's in Data Science at UC San Diego
@@ -58,7 +56,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-400/10 text-blue-300 border border-blue-400/30 hover:bg-blue-400/20 transition"
           >
-           LinkedIn
+            LinkedIn
           </a>
 
           {/* GitHub */}
@@ -81,18 +79,29 @@ export default function Hero() {
         </motion.div>
 
         <div className="text-gray-300 text-lg leading-relaxed space-y-4">
-        <p>
-          I am currently pursuing my M.S. in Data Science at the University of California, San Diego, where I focus on large-scale data systems, AI, and applied analytics. I hold a Bachelor’s degree in Computer Science from VIT Chennai and have built a strong foundation across machine learning, data engineering, and distributed processing.
-        </p>
-        
-        <p>
-          I bring 1.5+ years of professional experience working with telecom and e-commerce MNCs in Qatar through internship and hybrid roles at Ooredoo and Al Anees. My work there spanned ETL development, AI automation pipelines, KPI analytics, and cloud-based data workflows that supported business operations.
-        </p>
-        
-        <p>
-          Currently, I am a Graduate Student Researcher at the CAIDA lab within the San Diego Supercomputer Center at UC San Diego, advised by Prof. Ricky Mok. My work centers on internet-scale data analytics, traceroute measurement analysis, and building distributed pipelines to study network behavior at scale.
-        </p>
+          <p>
+            I am currently pursuing my M.S. in Data Science at the University of
+            California, San Diego, where I focus on large-scale data systems, AI,
+            and applied analytics. I hold a Bachelor’s degree in Computer
+            Science from VIT Chennai and have built a strong foundation across
+            machine learning, data engineering, and distributed processing.
+          </p>
 
+          <p>
+            I bring 1.5+ years of professional experience working with telecom
+            and e-commerce MNCs in Qatar through internship and hybrid roles at
+            Ooredoo and Al Anees. My work there spanned ETL development, AI
+            automation pipelines, KPI analytics, and cloud-based data workflows
+            that supported business operations.
+          </p>
+
+          <p>
+            Currently, I am a Graduate Student Researcher at the CAIDA lab within
+            the San Diego Supercomputer Center at UC San Diego, advised by Prof.
+            Ricky Mok. My work centers on internet-scale data analytics,
+            traceroute measurement analysis, and building distributed pipelines
+            to study network behavior at scale.
+          </p>
         </div>
       </motion.div>
 
@@ -106,23 +115,26 @@ export default function Hero() {
         <h2 className="text-2xl md:text-3xl font-semibold text-teal-300 mb-6">
           ✨ Recent Highlights
         </h2>
+
+        {/* ✅ single wrapper only (fixed nesting) */}
         <div className="space-y-4">
           <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400">
             <h3 className="font-semibold text-teal-200">
-              Graduate Student Researcher — San-Diego Supercomputer Center (CAIDA Lab)  
+              Graduate Student Researcher — San-Diego Supercomputer Center
+              (CAIDA Lab)
             </h3>
             <p className="text-gray-200 text-sm">
               Internet-Scale Traceroute Analysis.
             </p>
           </div>
 
-        <div className="space-y-4">
           <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400">
             <h3 className="font-semibold text-teal-200">
               Research Assistant — UC San Diego (Sept 2025)
             </h3>
             <p className="text-gray-200 text-sm">
-              Improving AI agents MCP tool usage and benchmarking agent behavior.
+              Improving AI agents MCP tool usage and benchmarking agent
+              behavior.
             </p>
           </div>
 
@@ -130,9 +142,7 @@ export default function Hero() {
             <h3 className="font-semibold text-teal-200">
               MS in Data Science — UC San Diego
             </h3>
-            <p className="text-gray-200 text-sm">
-              
-            </p>
+            <p className="text-gray-200 text-sm"></p>
           </div>
 
           <div className="bg-white/5 p-4 rounded-lg border-l-4 border-cyan-400">
