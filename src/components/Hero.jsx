@@ -81,25 +81,18 @@ export default function Hero() {
         </motion.div>
 
         <div className="text-gray-300 text-lg leading-relaxed space-y-4">
-          <p>
-            I hold a Bachelor’s degree in Computer Science, with over a year of
-            combined internship and remote industry experience. I worked with
-            organizations in Qatar, including Ooredoo and Alanees, contributing
-            to AI automation, data engineering, and ML systems.
-          </p>
+        <p>
+          I am currently pursuing my M.S. in Data Science at the University of California, San Diego, where I focus on large-scale data systems, AI, and applied analytics. I hold a Bachelor’s degree in Computer Science from VIT Chennai and have built a strong foundation across machine learning, data engineering, and distributed processing.
+        </p>
+        
+        <p>
+          I bring 1.5+ years of professional experience working with telecom and e-commerce MNCs in Qatar through internship and hybrid roles at Ooredoo and Al Anees. My work there spanned ETL development, AI automation pipelines, KPI analytics, and cloud-based data workflows that supported business operations.
+        </p>
+        
+        <p>
+          Currently, I am a Graduate Student Researcher at the CAIDA lab within the San Diego Supercomputer Center at UC San Diego, advised by Prof. Ricky Mok. My work centers on internet-scale data analytics, traceroute measurement analysis, and building distributed pipelines to study network behavior at scale.
+        </p>
 
-          <p>
-            I am currently pursuing a Master’s in Data Science at UC San Diego
-            and work as a Research Assistant under Dr. Kun Zhou, who is 
-            associated with Prof. Zhiting Hu and Prof. Beiwei Huang.
-            My research focuses on AI agents, MCP tool usage, benchmarking, and
-            system-level reliability.
-          </p>
-
-          <p>
-            My research has been recognized with a Best Paper Award at the IEEE
-            IACIS Conference 2024.
-          </p>
         </div>
       </motion.div>
 
@@ -113,6 +106,15 @@ export default function Hero() {
         <h2 className="text-2xl md:text-3xl font-semibold text-teal-300 mb-6">
           ✨ Recent Highlights
         </h2>
+        <div className="space-y-4">
+          <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400">
+            <h3 className="font-semibold text-teal-200">
+              Graduate Student Researcher — San-Diego Supercomputer Center (CAIDA Lab)  
+            </h3>
+            <p className="text-gray-200 text-sm">
+              Internet-Scale Traceroute Analysis.
+            </p>
+          </div>
 
         <div className="space-y-4">
           <div className="bg-white/5 p-4 rounded-lg border-l-4 border-teal-400">
