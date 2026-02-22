@@ -14,7 +14,7 @@ const experienceData = [
   period: "Jan 2026 – Present",
   logo: ucsdlogo,
   highlights: [
-    "• Internet-Scale Traceroute Analysis: Collected and processed Ark traceroute data using Dask for distributed computation, computed RTT and path statistics, and produced large-scale network visualizations"
+    "Internet-Scale Traceroute Analysis: Collected and processed Ark traceroute data using Dask for distributed computation, computed RTT and path statistics, and produced large-scale network visualizations"
   ],
 },
   {
@@ -24,8 +24,8 @@ const experienceData = [
   period: "Oct 2025 – Jan 2026",
   logo: ucsdlogo,
   highlights: [
-    "• Agent Benchmarking: Assisted in building MCP-based benchmarking pipelines to stress-test long-horizon, multi-tool agents across 5.5K+ APIs, revealing key planning–execution gaps.",
-    "• Robustness Evaluation: Developed failure-injection and trajectory analysis framework enabling data-efficient fine-tuning (1.2K samples outperforming 119K baselines) and improving agent reliability."
+    "Agent Benchmarking: Assisted in building MCP-based benchmarking pipelines to stress-test long-horizon, multi-tool agents across 5.5K+ APIs, revealing key planning–execution gaps.",
+    "Robustness Evaluation: Developed failure-injection and trajectory analysis framework enabling data-efficient fine-tuning (1.2K samples outperforming 119K baselines) and improving agent reliability."
   ],
 },
 {
@@ -92,7 +92,7 @@ export default function Experience() {
             Experience
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            My professional journey through data roles, delivering impactful AI and analytics solutions
+            My professional journey through data roles
           </p>
         </motion.div>
 
